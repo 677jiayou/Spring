@@ -13,7 +13,7 @@ public class testMain {
         HelloWorld hw=axt.getBean("HelloWorld",HelloWorld.class);
         hw.setMes("hello 李佳奇！");
         HelloWorld hw1=axt.getBean("HelloWorld",HelloWorld.class);
-        //调用方法/
+        //调用方法
         hw.say();
         hw1.say();
     }
