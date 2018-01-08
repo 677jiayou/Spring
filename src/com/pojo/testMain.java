@@ -11,7 +11,7 @@ public class testMain {
         //创建Spring上下文（加载bean.xml）
         ApplicationContext axt=new ClassPathXmlApplicationContext("bean.xml");
         //获取HelloWorld实例
-        HelloWorld hw=axt.getBean("HelloWorld",HelloWorld.class);
+        HelloWorld hw=xm.getBean("HelloWorld",HelloWorld.class);
         //调用方法
         hw.say();
     }
