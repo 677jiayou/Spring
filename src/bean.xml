@@ -7,11 +7,11 @@
 
     <!--</bean>-->
     <!--<bean id="axe" class="service.Axe"/>-->
-    <!--配置名为chinese的bean，其实现类是Dao.Chinese-->
-    <bean id="HelloWorld" class="com.pojo.HelloWorld">
+    <!--配置名为HelloWorld的bean，其实现类是Dao.HelloWorld,为单例模式-->
+    <bean id="HelloWorld" class="com.pojo.HelloWorld" scope="singleton">
         <!--<property name="axe" ref="StoneAxe"/>-->
-    <!--控制调用setAxe(),将容器中的axe Bean作为参数传递-->
-     <property name="mes" value="hello world"></property>
+
+     <!--<property name="mes" value="hello world"></property>-->
     </bean>
     <!--<bean id="StoneAxe" class="Dao.StoneAxe"/>-->
     <!--配置名为steel的bean，其实现类是Dao.steel.Axe-->
